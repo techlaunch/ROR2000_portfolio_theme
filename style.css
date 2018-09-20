@@ -16,3 +16,42 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 body {
 }
+
+#menu-main {
+	padding: 0px;
+}
+
+#menu-main .menu-item {
+	border: 1px solid black;
+	padding: 5px;
+	margin: 5px;
+	list-style: none;
+	text-align: center;
+}
+
+#menu-social {
+	padding: 0px;
+}
+
+#menu-social .menu-item {
+	list-style: none;
+	display: inline;
+	margin-left: 10px;
+}
+
+.fullscreen {
+	width: 100%;
+}
+
+.attachment-post-thumbnail {
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	border: 2px solid gray;
+	margin-right: 10px;
+}
+
+h1 {
+	font-family: 'Nunito', sans-serif;
+	margin-top: 40px;
+}
