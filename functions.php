@@ -1,5 +1,8 @@
 <?php 
 
+// include my widgets
+include_once get_template_directory() . '/widgets/tl_quote.php';
+
 function tl_portfolio_assets() {
 	wp_enqueue_style('boostrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
 	wp_enqueue_style('google_fonts', 'https://fonts.googleapis.com/css?family=Nunito');
@@ -21,8 +24,10 @@ function tl_widgets() {
 		'before_widget' => '<div class="chw-widget">',
 		'after_widget' => '</div>',
 		'before_title'=> '<h2 class="chw-title">',
-		'after_title' => '</h2>',
+		'after_title' => '</h2>'
 	]);
+
+	register_widget('tl_quote');
 }
 
 add_theme_support('post-thumbnails', [
